@@ -44,9 +44,11 @@ namespace L03_01
 
             double calnum = Convert.ToDouble(txtSales.Text);
             double commision = calnum * 0.02;
-            string displayCommision = Convert.ToString(commision);
+            var displayCommision = commision;
 
-            MessageBox.Show($"Your commission is ${displayCommision}.",
+            MessageBox.Show(
+                    String.Format(
+                    $"Your commission is {commision:C}."),
                     $"{displayName}'s Commission",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
