@@ -63,5 +63,15 @@ namespace L03_01
         {
             Close();
         }
+
+        private void txtName_Enter(object sender, EventArgs e)
+        {
+            txtName.SelectAll();
+        }
+
+        private void txtSales_Enter(object sender, EventArgs e)
+        {
+            txtSales.SelectAll();
+        }
     }
 }

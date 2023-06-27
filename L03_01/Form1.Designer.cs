@@ -43,7 +43,9 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(197, 31);
             this.txtName.TabIndex = 0;
+            this.txtName.Click += new System.EventHandler(this.txtName_Enter);
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
             // 
             // txtSales
             // 
@@ -51,6 +53,8 @@
             this.txtSales.Name = "txtSales";
             this.txtSales.Size = new System.Drawing.Size(197, 31);
             this.txtSales.TabIndex = 1;
+            this.txtSales.Click += new System.EventHandler(this.txtSales_Enter);
+            this.txtSales.Enter += new System.EventHandler(this.txtSales_Enter);
             // 
             // lblName
             // 
